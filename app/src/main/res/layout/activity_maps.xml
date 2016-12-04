@@ -1,0 +1,49 @@
+<FrameLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+<fragment android:id="@+id/map"
+          android:name="com.google.android.gms.maps.SupportMapFragment"
+          xmlns:android="http://schemas.android.com/apk/res/android"
+          xmlns:map="http://schemas.android.com/apk/res-auto"
+          xmlns:tools="http://schemas.android.com/tools"
+          android:layout_width="match_parent"
+          android:layout_height="match_parent"
+          tools:context="com.maps.googlemapsnearbyplaces.MapsActivity"/>
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                  xmlns:tools="http://schemas.android.com/tools"
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:orientation="vertical">
+
+        <CheckBox
+            android:id="@+id/checkRestaurant"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Nearby Restaurants"
+            android:textColor="@color/colorPurple"/>
+
+        <CheckBox
+            android:id="@+id/checkHospital"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Nearby Hospitals"
+            android:textColor="@color/colorPurple"/>
+
+        <CheckBox
+            android:id="@+id/checkTouristPlaces"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Nearby Tourist places"
+            android:textColor="@color/colorPurple"/>
+        <CheckBox
+            android:id="@+id/checkBoxAtm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Neerby ATM"
+            android:textColor="@color/colorPurple"/>
+
+    </LinearLayout>
+</FrameLayout>
